@@ -1,0 +1,6 @@
+{
+  "uuid": "3969D35A-5BDA-4F6E-AF55-8164BDE5E062",
+  "name": "string-match",
+  "install": "git://github.com/JohnMurray/string-match.git",
+  "license": "MIT"
+}

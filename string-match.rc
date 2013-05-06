@@ -1,0 +1,20 @@
+// linkage attributes
+#[ link(name = "string-match",
+        vers = "0.0.1",
+        uuid = "3969D35A-5BDA-4F6E-AF55-8164BDE5E062") ];
+
+// Additional metadata attributes
+#[ desc = "Fuzzy string matching in Rust"];
+#[ license = "MIT"];
+#[ author = "John Murray"];
+
+
+// Output type
+#[ crate_type = "lib"];
+
+// activated warnings
+#[ warn(non_camel_case_types) ];
+
+
+#[path = "src"];
+mod string_match;
