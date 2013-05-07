@@ -16,5 +16,5 @@
 #[ warn(non_camel_case_types) ];
 
 
-#[path = "src"];
+#[path = "src"]
 mod string_match;
