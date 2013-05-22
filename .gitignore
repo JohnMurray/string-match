@@ -1,3 +1,6 @@
 build/
 *.swp
 *.dSYM/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
