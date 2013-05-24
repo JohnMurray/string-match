@@ -26,7 +26,7 @@ dist: lib
 		--exclude \*/.git \
 		--exclude \*/.git/\* \
 		--file=string_match-0.0.1.tar.gz \
-		README.md string_match.rc src Makefile manifest.json test
+		README.md src Makefile manifest.json
 
 #-------------------
 # Binary Targts
@@ -38,12 +38,12 @@ dist: lib
 #    setting an executable's name, but not libraries)
 .PHONY : lib
 lib:
-	$(RUSTC) --lib --out-dir bin -O string_match.rc
+	$(RUSTC) --lib --out-dir bin -O src/string_match.rc
 
-bin/test-string_match: string_match.rc src/string_match.rs test/string_match.rs
+bin/test-string_match: src/string_match.rc src/*.rs src/test/string_match_test.rs
 	$(RUSTC) --test -o $@ $<
 
-bin/test-string_match-release: string_match.rc src/string_match.rs test/string_match.rs
+bin/test-string_match-release: src/string_match.rc src/*.rs src/test/string_match_test.rs
 	$(RUSTC) --test -O -o $@ $<
 
 

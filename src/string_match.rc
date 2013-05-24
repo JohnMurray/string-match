@@ -1,5 +1,5 @@
 // linkage attributes
-#[ link(name = "string-match",
+#[ link(name = "string_match",
         vers = "0.0.1",
         uuid = "3969D35A-5BDA-4F6E-AF55-8164BDE5E062") ];
 
@@ -15,6 +15,12 @@
 // activated warnings
 #[ warn(non_camel_case_types) ];
 
+//pub use string_match::*;
+pub use qs_score::*;
+pub mod qs_score;
+//mod string_match;
 
-#[path = "src/string_match.rs"]
-mod string_match;
+#[cfg(test)]
+mod test {
+    mod string_match_test;
+}
