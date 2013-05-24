@@ -1,4 +1,4 @@
-use string_match::*;
+use qs_score::*;
 
 #[test]
 fn test_qs_should_return_09_for_empty_comprator_string() {

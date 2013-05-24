@@ -15,12 +15,12 @@
  *
  * Returns a f32 
  */
-fn qs_score(str1 : &str, abbreviation: &str, offset : i16) -> f32 {
+pub fn qs_score(str1 : &str, abbreviation: &str, offset : i16) -> f32 {
     if str::len(abbreviation) == 0 { return 0.9f32; }
     if str::len(abbreviation) > str::len(str1) { return 0.0f32; }
 
     for uint::range(0, str::len(abbreviation) - 1) |i| {
-        
+
     }
 
     0.0f32
