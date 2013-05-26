@@ -11,6 +11,10 @@ wouldn't mind sharing with the larger Rust community.
 ## Current Roadmap
 
 + Add more tests for current 'QuickSilver' port
-+ Research more string-comparison algorithms
++ Research more string-comparison algorithms (start [here][1])
 + Implement methods as extension methods
 + Add necessary files to add to Cargo
+
+
+
+  [1]: http://stackoverflow.com/questions/49263/approximate-string-matching-algorithms
