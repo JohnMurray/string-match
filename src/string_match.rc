@@ -15,10 +15,9 @@
 // activated warnings
 #[ warn(non_camel_case_types) ];
 
-//pub use string_match::*;
 pub use qs_score::*;
+
 pub mod qs_score;
-//mod string_match;
 
 #[cfg(test)]
 mod test {
